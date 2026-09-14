@@ -5,8 +5,8 @@ provider "aws" {
 
 # Create S3 bucket with versioning and encryption
 resource "aws_s3_bucket" "taco_wagon" {
-  bucket_prefix  = "taco-wagon"
-  force_destroy  = true
+  bucket_prefix = "taco-wagon"
+  force_destroy = true
 
   tags = {
     Environment = "terraform-demo"
